@@ -4,4 +4,7 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
+ARG FLAG
+RUN printf '%s' "$FLAG" > flag.txt
+ENV FLAG=$FLAG
 CMD ["python", "main.py"]

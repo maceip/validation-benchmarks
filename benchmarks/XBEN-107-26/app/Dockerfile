@@ -5,5 +5,5 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 ARG FLAG
-RUN sed -i "s/FLAG/$FLAG/g" flag.txt
+RUN printf '%s' "$FLAG" > flag.txt
 CMD ["python", "main.py"]
