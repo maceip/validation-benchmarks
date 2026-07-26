@@ -53,3 +53,9 @@ vector_embedding,Vector store / RAG embedding isolation failures
 mcp,Model Context Protocol tool/server weaknesses
 tool_poisoning,MCP/tool description or output poisoning
 improper_output_handling,Unsafe handling of LLM or model output
+chain,Multi-step exploit chain
+lateral_movement,Network lateral movement / pivoting
+waf_bypass,WAF or filter evasion
+http2_smuggling,HTTP/2-specific smuggling or stream abuse
+saml,SAML federation weaknesses
+php,PHP-specific vulnerability surface
