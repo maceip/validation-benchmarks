@@ -76,3 +76,12 @@ oidc,OpenID Connect confusion
 csrf,Cross-Site Request Forgery
 rate_limit_bypass,Rate-limit or batching bypass
 java,Java-specific vulnerability surface
+unicode,Unicode normalization / casefold collision abuse
+ssi_injection,Server-Side Includes (SSI) injection
+http_parameter_pollution,HTTP Parameter Pollution / duplicate parameter parser mismatch
+argument_injection,Argument injection into argv or CLI option parsers
+null_byte_injection,Poison NULL byte / C-string truncation at language boundaries
+format_string,Format-string or str.format / legacy f-string evaluation abuse
+dns_rebinding,DNS rebinding / resolve-check then fetch-elsewhere
+confused_deputy,Confused deputy via shared origin intermediary (proxy block page, SW, etc.)
+english_shellcode,English-looking / dual-use ASCII payload that defeats structural shellcode IDS
